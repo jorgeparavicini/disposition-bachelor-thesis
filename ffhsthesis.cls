@@ -22,6 +22,8 @@
 
 \RequirePackage{layout}
 
+\RequirePackage{enumitem}
+
 \newenvironment{zusammenfassung}{
 \begingroup
 \let\clearpage\relax
