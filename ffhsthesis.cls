@@ -18,7 +18,7 @@
 \RequirePackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
-\RequirePackage[english,ngerman]{babel}
+\RequirePackage[english]{babel}
 
 \RequirePackage{layout}
 
@@ -36,8 +36,8 @@
 \endgroup
 \noindent}{}
 
-\newenvironment{abkuerzungen}[1][WWWWW]{\chapter*{Abk\"urzungen}
-\addcontentsline{toc}{chapter}{Abk\"urzungen}
+\newenvironment{abkuerzungen}[1][WWWWW]{\chapter*{Abbreviations}
+\addcontentsline{toc}{chapter}{Abbreviations}
 \begin{labeling}{#1}}{\end{labeling}}
 
 \newcommand{\@dokumentTyp}{Entwurf}
@@ -52,7 +52,7 @@
 \newcommand{\@referent}{}
 \newcommand{\@referent@in}{Referent(in)}
 \newcommand{\referent}[1]{\gdef\@referent@in{Referent} \gdef\@referent{#1}}
-\newcommand{\referentin}[1]{\gdef\@referent@in{Referentin} \gdef\@referent{#1}}
+\newcommand{\referentin}[1]{\gdef\@referent@in{Referent} \gdef\@referent{#1}}
 
 \newcommand{\@titelbild}{}
 \newcommand{\titelbild}[2][]{\gdef\@titelbild{\includegraphics[#1]{#2}}}
@@ -64,14 +64,14 @@
 
 \titlehead{
 \begin{varwidth}[t][2cm][c]{5cm}
-\includegraphics[height=2cm]{graphics/ffhs_logo_de.eps} % change to ffhs_logo_en for english
+\includegraphics[height=2cm]{graphics/ffhs_logo_en.eps} % change to ffhs_logo_en for english
 \end{varwidth}
 \hfill 
 \begin{varwidth}[t][2cm][c]{7cm}
 \begin{flushright}
 \normalfont
 Fernfachhochschule Schweiz\\
-Studiengang \@studiengang 
+Course of Study \@studiengang 
 \vfill\phantom{.}
 \end{flushright}
 \end{varwidth}
@@ -102,11 +102,11 @@ Studiengang \@studiengang
 \vfill
 \vfill
 
-\@dokumentTyp\ im Studiengang \@studiengang
+\@dokumentTyp\ in the course of studies \@studiengang
 
 \vspace{1ex}
 
-von
+from
 
 \vspace{1ex}
 \@author
@@ -118,7 +118,7 @@ von
 \phantom{.}
 \hfill
 \begin{varwidth}[t]{6cm}
-Eingereicht bei:
+Submitted to:
 
 \vspace{0.5ex}
 \mdseries\normalsize
