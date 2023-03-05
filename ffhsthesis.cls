@@ -72,7 +72,7 @@
 \begin{varwidth}[t][2cm][c]{7cm}
 \begin{flushright}
 \normalfont
-Fernfachhochschule Schweiz\\
+Swiss Distance University\\ of Applied Sciences\\
 Course of Study \@studiengang 
 \vfill\phantom{.}
 \end{flushright}
